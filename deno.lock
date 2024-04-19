@@ -522,5 +522,8 @@
       }
     }
   },
+  "redirects": {
+    "https://deno.land/x/sodium/basic.ts": "https://deno.land/x/sodium@0.2.0/basic.ts"
+  },
   "remote": {}
 }
