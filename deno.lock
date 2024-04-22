@@ -767,5 +767,8 @@
   "redirects": {
     "https://deno.land/x/sodium/basic.ts": "https://deno.land/x/sodium@0.2.0/basic.ts"
   },
-  "remote": {}
+  "remote": {
+    "https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/configuration.ts": "fe3f5ffd88292bd7b3d5ef91620d8df380b3ff3503c060194fddc969a967454d",
+    "https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/mod.ts": "759168d4a27ae42ccd560db759818aeaabcc3ebcd75c33b522e0adf65cb4b9db"
+  }
 }
