@@ -12,4 +12,3 @@ HOOK_DISABLE_NOTICE=0 # Set to 1 to disable the notice when the hook exits with 
 
 # Default Hook: Full List of Hooks at https://git-scm.com/docs/githooks#_hooks
 bash make.sh A0.all
-

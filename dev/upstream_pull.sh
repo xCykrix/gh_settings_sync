@@ -19,6 +19,7 @@ rm -rf "./$TU_GIT"
 git clone --quiet https://github.com/xCykrix/TemplateAllLang "$TU_GIT" > /dev/null
 
 # Move Template Files
+cp -rf "./$TU_GIT/.git-hooks/" "."
 cp -rf "./$TU_GIT/.github/" "."
 cp -rf "./$TU_GIT/dev/" "."
 cp -rf "./$TU_GIT/.editorconfig" "."
