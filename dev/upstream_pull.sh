@@ -28,9 +28,9 @@ cp -rf "./$TU_GIT/make.sh" "."
 
 # Generate Base Files
 mkdir -p "./dev/"
-touch "./dev/0.setup.sh"
-touch "./dev/1.build.sh"
-touch "./dev/2.validate.sh"
+touch "./dev/B0.setup.sh"
+touch "./dev/B1.build.sh"
+touch "./dev/B2.validate.sh"
 
 # Delete Template
 rm -rf "./$TU_GIT"

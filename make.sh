@@ -1,7 +1,8 @@
 
 # Variables
 TARGETS=();
-TARGETTED=$1;
+TARGETTED="";
+FTARG="$1";
 
 # Collect & Request Target
 for DEV_FILE in ./dev/*; do
@@ -9,7 +10,7 @@ for DEV_FILE in ./dev/*; do
   TARGETS+=("$DEV_FILE");
 done
 
-if [ -z "${TARGETTED}" ]; then
+if [ -z "${FTARG}" ]; then
   echo "make-script(): select [#]"
   I_CNT_MAKE_1=0;
   for TARGET in ${TARGETS[@]}; do
@@ -36,4 +37,5 @@ bash ./dev/$FTARG.sh $FTARG;
 # Capture Exit
 EXIT_CODE=$?;
 echo "Exit: $EXIT_CODE";
+echo "";
 exit $EXIT_CODE;
