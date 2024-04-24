@@ -1,6 +1,5 @@
 
 ALL_SCRIPTS=(
-  "B0.setup"
   "B1.build"
   "B2.validate"
 )
