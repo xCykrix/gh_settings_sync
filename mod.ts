@@ -48,9 +48,6 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
   } catch (error: unknown) {
     if (error instanceof Error) {
       octokit.log.error(`FAILED BRANCH SYNC OF "%s";`, repository.full_name);
-      octokit.log.error(error.message);
-      octokit.log.error(error.cause as string);
-      octokit.log.error(error.name as string);
       octokit.log.error(error.stack!);
       Deno.exit(-1);
     }
