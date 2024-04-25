@@ -1,6 +1,6 @@
 
 ALL_SCRIPTS=(
-  "Z99.global-setup"
+  "Z90.setup-all"
   "B0.setup"
   "B1.build"
   "B2.validate"

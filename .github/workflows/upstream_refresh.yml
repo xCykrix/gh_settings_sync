@@ -18,6 +18,6 @@ jobs:
       - name: "Initialize"
         run: "sudo snap install deno"
       - name: "Call Script"
-        run: "bash dev/upstream_refresh_github.sh"
+        run: "bash dev/Z99.gh_settings_sync.sh"
         env:
           GH_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
