@@ -3,8 +3,7 @@
   "packages": {
     "specifiers": {
       "npm:@octoherd/cli": "npm:@octoherd/cli@5.0.0",
-      "npm:github-secret-dotenv": "npm:github-secret-dotenv@1.1.4",
-      "npm:libsodium-wrappers": "npm:libsodium-wrappers@0.7.13"
+      "npm:github-secret-dotenv": "npm:github-secret-dotenv@1.1.4"
     },
     "npm": {
       "@inquirer/core@0.0.17-alpha.0": {
@@ -41,9 +40,9 @@
         "integrity": "sha512-9Hra/Z+lGO+K8MCD5C1YcocRWxnlAv1oIyvkTqd9a4xMG21TL18qmxtDQzzpmt4ZF5RI+iMPZIZi6kU6QEzFmA==",
         "dependencies": {
           "@octokit/core": "@octokit/core@6.1.2",
-          "@octokit/plugin-paginate-rest": "@octokit/plugin-paginate-rest@11.1.1_@octokit+core@6.1.2",
-          "@octokit/plugin-retry": "@octokit/plugin-retry@7.1.0_@octokit+core@6.1.2",
-          "@octokit/plugin-throttling": "@octokit/plugin-throttling@9.2.0_@octokit+core@6.1.2",
+          "@octokit/plugin-paginate-rest": "@octokit/plugin-paginate-rest@11.2.0_@octokit+core@6.1.2",
+          "@octokit/plugin-retry": "@octokit/plugin-retry@7.1.1_@octokit+core@6.1.2",
+          "@octokit/plugin-throttling": "@octokit/plugin-throttling@9.2.1_@octokit+core@6.1.2",
           "quick-format-unescaped": "quick-format-unescaped@4.0.4",
           "semantic-release-plugin-update-version-in-files": "semantic-release-plugin-update-version-in-files@1.1.0"
         }
@@ -143,8 +142,8 @@
         "integrity": "sha512-pGUdSP+eEPfZiQHNkZI0U01HLipxncisdJQB4G//OAmfeO8sqTQ9KRa0KF03TUPCziNsoXUrTg4B2Q1EX++T0Q==",
         "dependencies": {}
       },
-      "@octokit/plugin-paginate-rest@11.1.1_@octokit+core@6.1.2": {
-        "integrity": "sha512-joUIZu9TupD4pRXLmWShD1Ur/oxYf/bJjYcnaopmGTReNrmWwcW7DUGSrWOjoTeihnlDig+a79m8koiafc4XQw==",
+      "@octokit/plugin-paginate-rest@11.2.0_@octokit+core@6.1.2": {
+        "integrity": "sha512-Nd3hCJbr5GUwTgV6j2dMONIigoqNwJRm+yvA5BYb1dnGBTmVUrGYGNwYsGl2hN+xtDAYpqxDiz8vysh/NqEN+A==",
         "dependencies": {
           "@octokit/core": "@octokit/core@6.1.2",
           "@octokit/types": "@octokit/types@13.4.1"
@@ -171,8 +170,8 @@
           "deprecation": "deprecation@2.3.1"
         }
       },
-      "@octokit/plugin-retry@7.1.0_@octokit+core@6.1.2": {
-        "integrity": "sha512-6mc4xNtT6eoDBGrJJn0sFALUmIba2f7Wx+G8XV9GkBLcyX5PogBdx2mDMW5yPPqSD/y23tYagkjOLX9sT7O6jA==",
+      "@octokit/plugin-retry@7.1.1_@octokit+core@6.1.2": {
+        "integrity": "sha512-G9Ue+x2odcb8E1XIPhaFBnTTIrrUDfXN05iFXiqhR+SeeeDMMILcAnysOsxUpEWcQp2e5Ft397FCXTcPkiPkLw==",
         "dependencies": {
           "@octokit/core": "@octokit/core@6.1.2",
           "@octokit/request-error": "@octokit/request-error@6.1.1",
@@ -180,8 +179,8 @@
           "bottleneck": "bottleneck@2.19.5"
         }
       },
-      "@octokit/plugin-throttling@9.2.0_@octokit+core@6.1.2": {
-        "integrity": "sha512-zHZSZCC7wk3HbK3ZCuvc3iPrnFGoYIVJsJAY4l8ilsVu4fqPfe7BP7QLZ1A641yttLWqgy2oID3ETD3Z1036Gw==",
+      "@octokit/plugin-throttling@9.2.1_@octokit+core@6.1.2": {
+        "integrity": "sha512-n6EK4/1Npva54sAFDdpUxAbO14FbzudJ/k7DZPjQuLYOvNTWj4DGeH//J9ZCVoLkAlvRWV5sWKLaICsmGvqg2g==",
         "dependencies": {
           "@octokit/core": "@octokit/core@6.1.2",
           "@octokit/types": "@octokit/types@13.4.1",
@@ -510,16 +509,6 @@
           "universalify": "universalify@2.0.1"
         }
       },
-      "libsodium-wrappers@0.7.13": {
-        "integrity": "sha512-kasvDsEi/r1fMzKouIDv7B8I6vNmknXwGiYodErGuESoFTohGSKZplFtVxZqHaoQ217AynyIFgnOVRitpHs0Qw==",
-        "dependencies": {
-          "libsodium": "libsodium@0.7.13"
-        }
-      },
-      "libsodium@0.7.13": {
-        "integrity": "sha512-mK8ju0fnrKXXfleL53vtp9xiPq5hKM0zbDQtcxQIsSmxNgSxqCj6R7Hl9PkrNe2j29T4yoDaF7DJLK9/i5iWUw==",
-        "dependencies": {}
-      },
       "lodash@4.17.21": {
         "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
         "dependencies": {}
@@ -764,11 +753,8 @@
       }
     }
   },
-  "redirects": {
-    "https://deno.land/x/sodium/basic.ts": "https://deno.land/x/sodium@0.2.0/basic.ts"
-  },
   "remote": {
-    "https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/configuration.ts": "fe3f5ffd88292bd7b3d5ef91620d8df380b3ff3503c060194fddc969a967454d",
-    "https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/mod.ts": "759168d4a27ae42ccd560db759818aeaabcc3ebcd75c33b522e0adf65cb4b9db"
+    "https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/configuration.ts": "f771fd81cd9aadcf3eb3beca0ff8b87155170d46dbcd711fd6998e60e145fc2b",
+    "https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/mod.ts": "30edb4b2859760e36a5c284a623b8645bef7031795f9e812371ba53f66187244"
   }
 }

@@ -39,15 +39,18 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
       owner: repository.owner.login,
       repo: repository.name,
       ...upstream.branch,
-    });
-    await octokit.request('PUT /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures', {
+    }).catch((e) => console.info(1, e))
+    await octokit.request('POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures', {
       owner: repository.owner.login,
       repo: repository.name,
       branch: upstream.branch.branch,
-    })
+    }).catch((e) => console.info(2, e))
   } catch (error: unknown) {
     if (error instanceof Error) {
       octokit.log.error(`FAILED BRANCH SYNC OF "%s";`, repository.full_name);
+      octokit.log.error(error.message);
+      octokit.log.error(error.cause as string);
+      octokit.log.error(error.name as string);
       octokit.log.error(error.stack!);
       Deno.exit(-1);
     }
