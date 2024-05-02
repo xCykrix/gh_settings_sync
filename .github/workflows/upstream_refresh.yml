@@ -3,21 +3,21 @@ name: "Repo Settings Sync"
 on:
   push:
     branches:
-      - main
+      - 'main'
   schedule:
-    - cron: 0 0 * * *
+    - cron: '0 0 * * *'
 
 jobs:
   settings-sync:
     runs-on: "ubuntu-latest"
     steps:
-      - name: "Settings Sync"
+      - name: "Checkout"
         uses: actions/checkout@v4
         with:
           submodules: true
       - name: "Initialize"
         run: "sudo snap install deno"
-      - name: "Call Script"
+      - name: "Sync Settings"
         run: "bash dev/Z99.gh_settings_sync.sh"
         env:
           GH_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
