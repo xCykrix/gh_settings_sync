@@ -18,12 +18,8 @@ labels:
 3. Code or repository that can be used to consistently reproduce the behavior.
 4. Please include any and all errors that are generated.
 
-**Expected Behavior**: Please explain the behavior you expected the application
-to implement.
+**Expected Behavior**: Please explain the behavior you expected the application to implement.
 
-**Current Environment**: Please detail the specs and operating system of the
-machine you are currently using. Please include the version of this project
-that you are using.
+**Current Environment**: Please detail the specs and operating system of the machine you are currently using. Please include the version of this project that you are using.
 
-**Additional Context**: Please provide any additional information you feel
-should be shared, if applicable.
+**Additional Context**: Please provide any additional information you feel should be shared, if applicable.

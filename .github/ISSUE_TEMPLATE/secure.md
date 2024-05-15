@@ -18,8 +18,7 @@ https://docs.github.com/en/code-security/security-advisories/guidance-on-reporti
 
 Please fill the below information for non-critical concerns. We will reach out requesting this information privately for critical concerns.
 
-**Describe the Concern**: A clear and concise description of what is
-problematic. 
+**Describe the Concern**: A clear and concise description of what is problematic.
 
 **Information / Steps to Reproduce**:
 
@@ -28,11 +27,8 @@ problematic.
 3. Code or repository that can be used to consistently reproduce the behavior.
 4. Please include any and all errors that are generated.
 
-**Expected Behavior**: Please explain the behavior you expected the application
-to implement.
+**Expected Behavior**: Please explain the behavior you expected the application to implement.
 
-**Mitigation**: Please explain how you believe that we can mitigate this concern
-to prevent exploitation.
+**Mitigation**: Please explain how you believe that we can mitigate this concern to prevent exploitation.
 
-**Additional Context**: Please provide any additional information you feel
-should be shared, if applicable.
+**Additional Context**: Please provide any additional information you feel should be shared, if applicable.

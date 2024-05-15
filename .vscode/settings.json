@@ -4,4 +4,3 @@
   "deno.unstable": true,
   "deno.config": "./deno.jsonc"
 }
-  

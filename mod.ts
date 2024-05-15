@@ -39,12 +39,12 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
       owner: repository.owner.login,
       repo: repository.name,
       ...upstream.branch,
-    }).catch((e) => console.info(1, e))
+    }).catch((e) => console.info(1, e));
     await octokit.request('POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures', {
       owner: repository.owner.login,
       repo: repository.name,
       branch: upstream.branch.branch,
-    }).catch((e) => console.info(2, e))
+    }).catch((e) => console.info(2, e));
   } catch (error: unknown) {
     if (error instanceof Error) {
       octokit.log.error(`FAILED BRANCH SYNC OF "%s";`, repository.full_name);
@@ -55,7 +55,7 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
 
   // Sync Issue Labels
   octokit.log.info('START LABEL SYNC OF "%s";', repository.full_name);
-  const def = new Map<string, { name: string; color: string; }>();
+  const def = new Map<string, { name: string; color: string }>();
 
   for (const label of upstream.label) {
     def.set(label.name, label);
@@ -68,7 +68,7 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
     const labels = await octokit.request('GET /repos/{owner}/{repo}/labels', {
       owner: repository.owner.login,
       repo: repository.name,
-    })
+    });
     for (const label of labels.data) {
       const l = def.get(label.name);
       if (l === undefined) {
@@ -91,7 +91,7 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
         owner: repository.owner.login,
         repo: repository.name,
         name: del,
-      })
+      });
     }
 
     for (const cre of def.values()) {
@@ -101,7 +101,7 @@ export async function script(octokit: Octokit, repository: Repository): Promise<
         repo: repository.name,
         name: cre.name,
         color: cre.color,
-      })
+      });
     }
   } catch (error: unknown) {
     if (error instanceof Error) {
